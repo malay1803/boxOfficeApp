@@ -1,12 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useReducer } from 'react';
 import { useParams } from 'react-router-dom';
 import { apiGet } from '../misc/config';
 
+const reducer = (prevState, action) =>{
+  switch(action.type){
+     
+    case 'FETCH_SUCCESS' : {
+      RETURN {isLoading: false, error: null, show: action.show}
+    }
+
+    case 'FETCH_FAILED': {
+      return {...prevState, isLoading: false, error: action.error}
+    }
+
+    default: return prevState
+  }
+}
+
+const initialState = {
+  show: null,
+  isLoading: true
+  error: null
+}
+
 const Show = () => {
   const { id } = useParams();
-  const [show, setShow] = useState(null);
-  const [isLoading, SetIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+
+  const [{state, isLoading, error}, dispatch] useReducer(reducer, initialState)
 
   useEffect(() => {
     let isMounted = true;
@@ -14,14 +34,12 @@ const Show = () => {
     apiGet(`/shows/${id}?embed[]=seasons&embed[]=cast`)
       .then(results => {
           if (isMounted) {
-            setShow(results);
-            SetIsLoading(false);
+            dispatch( {type: 'FETCH_SUCCESS', show: results} )
           }
       })
       .catch(err => {
         if (isMounted) {
-          setError(err.message);
-          SetIsLoading(false);
+          dispatch( {type: 'FETCH_FAILED', error: err.message} )
         }
       });
 
