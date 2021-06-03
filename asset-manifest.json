@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/boxOfficeApp%20/static/css/main.5fffadb5.chunk.css",
-    "main.js": "/boxOfficeApp%20/static/js/main.225da345.chunk.js",
-    "main.js.map": "/boxOfficeApp%20/static/js/main.225da345.chunk.js.map",
+    "main.js": "/boxOfficeApp%20/static/js/main.36d7195b.chunk.js",
+    "main.js.map": "/boxOfficeApp%20/static/js/main.36d7195b.chunk.js.map",
     "runtime-main.js": "/boxOfficeApp%20/static/js/runtime-main.56bc8689.js",
     "runtime-main.js.map": "/boxOfficeApp%20/static/js/runtime-main.56bc8689.js.map",
-    "static/js/2.d8b22c7d.chunk.js": "/boxOfficeApp%20/static/js/2.d8b22c7d.chunk.js",
-    "static/js/2.d8b22c7d.chunk.js.map": "/boxOfficeApp%20/static/js/2.d8b22c7d.chunk.js.map",
+    "static/js/2.a467eb1a.chunk.js": "/boxOfficeApp%20/static/js/2.a467eb1a.chunk.js",
+    "static/js/2.a467eb1a.chunk.js.map": "/boxOfficeApp%20/static/js/2.a467eb1a.chunk.js.map",
     "static/js/3.c12c69e9.chunk.js": "/boxOfficeApp%20/static/js/3.c12c69e9.chunk.js",
     "static/js/3.c12c69e9.chunk.js.map": "/boxOfficeApp%20/static/js/3.c12c69e9.chunk.js.map",
     "index.html": "/boxOfficeApp%20/index.html",
     "static/css/main.5fffadb5.chunk.css.map": "/boxOfficeApp%20/static/css/main.5fffadb5.chunk.css.map",
-    "static/js/2.d8b22c7d.chunk.js.LICENSE.txt": "/boxOfficeApp%20/static/js/2.d8b22c7d.chunk.js.LICENSE.txt"
+    "static/js/2.a467eb1a.chunk.js.LICENSE.txt": "/boxOfficeApp%20/static/js/2.a467eb1a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.56bc8689.js",
-    "static/js/2.d8b22c7d.chunk.js",
+    "static/js/2.a467eb1a.chunk.js",
     "static/css/main.5fffadb5.chunk.css",
-    "static/js/main.225da345.chunk.js"
+    "static/js/main.36d7195b.chunk.js"
   ]
 }
